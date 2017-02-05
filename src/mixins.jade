@@ -1,0 +1,7 @@
+mixin styles(...styles)
+	-each style in styles
+		link(rel="stylesheet", href=style)
+
+mixin scripts(...scripts)
+	-each script in scripts
+		script(src=script)

@@ -1,0 +1,36 @@
+include mixins.jade
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Балттехника
+		+styles('css/normalize.css', 'style.css')
+	body
+		header
+			.header-inner
+				a(href="index.html")
+					img(src="img/logo.png", alt="")
+				.menu-lang
+					h1.company-name Дноуглубительная компания
+					ul.menu
+						li.current-menu-item
+							a(href="") О компании
+						li
+							a(href="technics.html") Техника
+						li
+							a(href="projects.html") Проекты
+						li
+							a(href="contact.html") Контакты
+					.lang
+						a(href="") English
+		block content
+
+		footer
+			.footer-inner
+				h4 Культурный подход к дноуглублению
+				p ООО «Балттехника», Санкт-Петербург, 197342, наб. Черной речки, 15, офис 62
+				p тел (812) 313 65 98, факс (812) 313 65 99, info@balttehnika.ru
+	//- +scripts('https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', 'js/balttechnic.js')
