@@ -17,46 +17,15 @@
 html {
   width: 100%;
   min-width: 820px;
-  background: url(img/bg-left.jpg) 0 0 no-repeat;
-  background-attachment: fixed;
-}
-
-@media (max-width: 1600px) {
-  html {
-    background-image: none;
-  }
-}
-
-@media (min-width: 1600px) {
-  html {
-    background-position: -100px 0;
-  }
-}
-
-@media (min-width: 1750px) {
-  html {
-    background-position: 0 0;
-  }
 }
 
 body {
   width: 100%;
   font-size: 10px;
-  background: url(img/bg-right.jpg) 100% 40px no-repeat;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font: 400 14px/1.2 HelveticaNeue, Arial, sans-serif;
-}
-
-@media (max-width: 1600px) {
-  body {
-    background-image: none;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    background-position: 100% 40px;
-  }
 }
 
 ol,
@@ -126,7 +95,7 @@ a .active, a:hover {
 
 p,
 li {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   text-align: justify;
 }
@@ -134,6 +103,7 @@ li {
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 table th {
@@ -173,7 +143,7 @@ table td {
   letter-spacing: 20.5px;
   color: #f05c2a;
   padding: 0;
-  margin: 0 -20px 5px 15px;
+  margin: 0 -20px 15px 15px;
   text-transform: uppercase;
 }
 
@@ -258,7 +228,7 @@ footer {
   position: absolute;
   height: 12px;
   background-color: #008090;
-  width: 600px;
+  width: 640px;
   margin-left: -410px;
   top: -50px;
   -ms-transform: skewX(-23deg);
@@ -271,8 +241,8 @@ footer {
   position: absolute;
   height: 12px;
   background-color: #f05c2a;
-  width: 600px;
-  margin-left: -260px;
+  width: 640px;
+  margin-left: -240px;
   top: -30px;
   -ms-transform: skewX(-23deg);
   -webkit-transform: skewX(-23deg);
@@ -354,8 +324,11 @@ footer {
   letter-spacing: 3.5px;
 }
 
-.nav-info {
+.counter + .nav-info {
   float: right;
+}
+
+.nav-info {
   font-size: 11px;
   letter-spacing: 3.5px;
 }
@@ -409,20 +382,58 @@ footer {
   color: #808080;
 }
 
-.projects {
+.info {
   width: 790px;
   margin-bottom: 90px;
 }
 
-.projects h2 + .sub-2 {
+.info h2 {
+  margin-bottom: 0;
+}
+
+.info h2 + .sub-2 {
   margin: 10px 0;
   letter-spacing: 1px;
 }
 
-.projects__item {
-  padding: 0 200px 15px 0;
+.info__item {
+  padding: 0 0 15px 0;
   margin-bottom: 22px;
   border-bottom: 1px solid #008090;
+}
+
+.info__item h2,
+.info__item p {
+  cursor: pointer;
+  padding-right: 200px;
+}
+
+.info--technics h2 + .sub-2 {
+  padding: 0;
+  margin: 0;
+}
+
+.info__img-text {
+  margin-top: 15px;
+}
+
+.info__img {
+  position: relative;
+  height: 334px;
+  margin-bottom: 20px;
+}
+
+.info__img img {
+  position: absolute;
+  z-index: 0;
+}
+
+.info__img-mask {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: url(../img/mask.png) 0 0 no-repeat;
+  height: 334px;
 }
 
 .text h1,
@@ -438,6 +449,38 @@ footer {
 
 .text__item {
   margin-bottom: 33px;
+}
+
+.technics-info p {
+  margin: 0;
+}
+
+.technics-info table {
+  width: 250px;
+}
+
+.technics-info table td {
+  text-align: left;
+  font-size: 12px;
+}
+
+.technics-info table td:first-child {
+  width: 175px;
+}
+
+.technics-info table td:last-child {
+  width: 75px;
+}
+
+.top-btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #008090;
+  position: relative;
+  bottom: -70px;
+  cursor: pointer;
+  float: right;
+  letter-spacing: 3px;
 }
 
 /*# sourceMappingURL=css/maps/style.css.map */

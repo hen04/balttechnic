@@ -5,3 +5,9 @@ mixin styles(...styles)
 mixin scripts(...scripts)
 	-each script in scripts
 		script(src=script)
+
+mixin projects(header, subheader, text)
+	.info__item
+		h2=header
+		p.sub-2=subheader
+		p=text
