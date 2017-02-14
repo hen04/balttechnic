@@ -28,6 +28,12 @@ body {
   font: 400 14px/1.2 HelveticaNeue, Arial, sans-serif;
 }
 
+@media (min-width: 830px) {
+  body {
+    min-width: 830px;
+  }
+}
+
 ol,
 ul {
   margin: 0 0 0 15px;
@@ -151,7 +157,6 @@ table td {
   float: left;
   padding: 0 0 0 10px;
   margin: 0;
-  width: 80%;
   box-sizing: border-box;
 }
 
@@ -509,10 +514,22 @@ footer {
   }
 }
 
+@media (max-width: 830px) {
+  .left-pic {
+    display: none;
+  }
+}
+
 main {
   width: 830px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+@media (max-width: 830px) {
+  main {
+    width: 100%;
+  }
 }
 
 .right-pic {
@@ -533,5 +550,11 @@ main {
 @media (max-width: 1100px) {
   .right-pic-bg {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 830px) {
+  .right-pic-bg {
+    display: none;
   }
 }
