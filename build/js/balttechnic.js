@@ -1,5 +1,12 @@
 $(function(){
 
+	var height = $(window).height();
+	$(window).resize(function() {
+		var height = $(window).height();
+		$('.right-pic, .right-pic-bg').css('height', height);
+	});
+	$('.right-pic, .right-pic-bg').css('height', height);
+
 	$('.info__img-text').hide();
 	$('.info__item').on('click', function(){
 		if ( $(this).hasClass('open') ) {
@@ -14,9 +21,12 @@ $(function(){
 			$('body').css('background-image', 'url('+img+')');
 		}
 	});
-	
+
 	$('.top-btn').click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;
 	});
+
+
+
 });
