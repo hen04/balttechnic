@@ -5,14 +5,13 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		//- meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		title Балттехника
 		+styles('css/normalize.css', 'style.css')
 		+scripts('https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', 'js/balttechnic.js')
 	body
 		.main-content
 			.left-pic
-				.left-pic-bg(style="background-image: url('img/bg-main-left.jpg');")
+				.left-pic-bg(style="background-image: url('img/bg-contacts-left.jpg');")
 			main
 				header
 					.header-inner
@@ -27,17 +26,21 @@ html(lang="ru")
 									a(href="technics.html") Техника
 								li
 									a(href="projects.html") Проекты
-								li
+								li.current-menu-item
 									a(href="contact.html") Контакты
 							.lang
 								a(href="") English
 				// /header
-				block content
+
+				.wrapper
+					block content
+				// /.wrapper
 
 				footer
+					.top-btn Наверх
 					.footer-inner
-						h4 Культурный подход к дноуглублению
-						p ООО «Балттехника», Санкт-Петербург, 197342, наб. Черной речки, 15, офис 62
-						p тел (812) 313 65 98, факс (812) 313 65 99, info@balttehnika.ru
+							h4 Культурный подход к дноуглублению
+							p ООО «Балттехника», Санкт-Петербург, 197342, наб. Черной речки, 15, офис 62
+							p тел (812) 313 65 98, факс (812) 313 65 99, info@balttehnika.ru
 			.right-pic
-				.right-pic-bg(style="background-image: url('img/bg-main-right.jpg');")
+				.right-pic-bg(style="background-image: url('img/bg-contacts-right.jpg');")

@@ -124,7 +124,7 @@ table td {
 
 .header-inner {
   max-width: 820px;
-  margin: 50px auto;
+  margin: 50px auto 0;
   text-align: center;
 }
 
@@ -140,7 +140,6 @@ table td {
 
 .menu-lang {
   overflow: hidden;
-  margin-bottom: 50px;
 }
 
 .company-name {
@@ -216,10 +215,13 @@ table td {
   width: 100%;
   box-sizing: border-box;
   max-width: 810px;
+  overflow: hidden;
+  padding-top: 50px;
 }
 
 footer {
   padding-bottom: 40px;
+  position: relative;
 }
 
 .footer-inner {
@@ -445,19 +447,19 @@ footer {
   height: 334px;
 }
 
-.text h1,
-.text h2,
-.text h3,
-.text h4,
-.text h5,
-.text p,
-.text li,
-.text table {
-  width: 550px;
+.text-item {
+  margin-bottom: 33px;
 }
 
-.text__item {
-  margin-bottom: 33px;
+.text-item h1,
+.text-item h2,
+.text-item h3,
+.text-item h4,
+.text-item h5,
+.text-item p,
+.text-item li,
+.text-item table {
+  width: 550px;
 }
 
 .technics-info p {
@@ -486,7 +488,7 @@ footer {
   font-size: 11px;
   color: #008090;
   position: relative;
-  bottom: -70px;
+  bottom: 50px;
   cursor: pointer;
   float: right;
   letter-spacing: 3px;

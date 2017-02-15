@@ -107,7 +107,7 @@ table {
 }
 .header-inner {
 	max-width: 820px;
-	margin: 50px auto;
+	margin: 50px auto 0;
 	text-align: center;
 	&>a {
 		display: inline-block;
@@ -120,7 +120,6 @@ table {
 }
 .menu-lang {
 	overflow: hidden;
-	margin-bottom: 50px;
 }
 .company-name {
 	font-weight: 300;
@@ -135,7 +134,6 @@ table {
 	float: left;
 	padding: 0 0 0 10px;
 	margin: 0;
-	// width: 80%;
 	box-sizing: border-box;
 	li {
 		float: left;
@@ -189,10 +187,13 @@ table {
 	width: 100%;
 	box-sizing: border-box;
 	max-width: 810px;
+  overflow: hidden;
+  padding-top: 50px;
 }
 
 footer {
 	padding-bottom: 40px;
+  position: relative;
 }
 .footer-inner {
 	margin: 120px 0 0;
@@ -385,7 +386,8 @@ footer {
 	}
 }
 
-.text {
+.text-item {
+  margin-bottom: 33px;
 	h1,
 	h2,
 	h3,
@@ -395,9 +397,6 @@ footer {
 	li,
 	table {
 		width: 550px;
-	}
-	&__item {
-		margin-bottom: 33px;
 	}
 }
 
@@ -424,7 +423,7 @@ footer {
 	font-size: 11px;
 	color: $green;
 	position: relative;
-	bottom: -70px;
+	bottom: 50px;
 	cursor: pointer;
 	float: right;
 	letter-spacing: 3px;
