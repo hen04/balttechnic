@@ -125,7 +125,7 @@ table {
 .company-name {
 	font-weight: 300;
 	font-size: 19px;
-	letter-spacing: 20px;
+	letter-spacing: 19px;
 	color: $orange;
 	padding: 0;
 	margin: 0 -20px 15px 15px;
@@ -351,7 +351,6 @@ footer {
     border-bottom: 1px solid #008090;
 		h2,
 		p {
-			cursor: pointer;
 			padding-right: 200px;
 		}
   }
@@ -360,6 +359,10 @@ footer {
 			padding: 0;
 			margin: 0;
 		}
+    .info__item h2,
+    .info__item p {
+      cursor: pointer;
+    }
 	}
 	&__img-text {
 		margin-top: 15px;
@@ -442,9 +445,15 @@ footer {
 .left-pic {
   width: calc(50% - 405px);
   width: -webkit-calc(50% - 405px);
+  position: relative;
+}
+.left-pic-bg {
+  width: calc(50% - 405px);
+  width: -webkit-calc(50% - 405px);
   background-size: contain;
   background-repeat: no-repeat;
   height: 800px;
+  position: fixed;
   @media (max-width: 1100px) {
     visibility: hidden;
   }
@@ -455,6 +464,7 @@ footer {
 main {
   width: 830px;
   padding-right: 20px;
+  padding-left: 20px;
   box-sizing: border-box;
   @media (max-width: 830px) {
     width: 100%;
