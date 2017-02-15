@@ -514,7 +514,7 @@ footer {
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 870px) {
   .left-pic {
     display: none;
   }
@@ -553,7 +553,7 @@ main {
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 870px) {
   .right-pic-bg {
     display: none;
   }
